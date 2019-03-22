@@ -20,7 +20,7 @@ final class ImageViewModel: ListDiffable {
     // MARK: ListDiffable
 
     func diffIdentifier() -> NSObjectProtocol {
-        return "image" as NSObjectProtocol
+        return url.absoluteString as NSObjectProtocol
     }
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {

@@ -13,7 +13,13 @@ import IGListKit
 final class ImageCell: UICollectionViewCell, ListBindable {
     
     @IBOutlet weak var imageView: UIImageView!
-
+    var viewModel: ImageViewModel? {
+        didSet {
+            guard let viewModel = viewModel else { return }
+            imageView.sd_setImage(with: viewModel.url)
+        }
+    }
+    
     // MARK: ListBindable
 
     func bindViewModel(_ viewModel: Any) {

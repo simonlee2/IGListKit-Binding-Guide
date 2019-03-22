@@ -10,29 +10,28 @@ import Foundation
 import IGListKit
 
 final class Post: ListDiffable {
-    
+
     let username: String
     let timestamp: String
-    let imageURL: URL
+    let imageURLs: [URL]
     let likes: Int
     let comments: [Comment]
 
-    init(username: String, timestamp: String, imageURL: URL, likes: Int, comments: [Comment]) {
+    init(username: String, timestamp: String, imageURLs: [URL], likes: Int, comments: [Comment]) {
         self.username = username
         self.timestamp = timestamp
-        self.imageURL = imageURL
+        self.imageURLs = imageURLs
         self.likes = likes
         self.comments = comments
     }
 
     // MARK: ListDiffable
-
     func diffIdentifier() -> NSObjectProtocol {
         return (username + timestamp) as NSObjectProtocol
     }
-    
+
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         return true
     }
-    
+
 }
