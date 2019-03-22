@@ -23,6 +23,8 @@
 		295E9F181F47512800483EF6 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295E9F171F47512800483EF6 /* ImageViewModel.swift */; };
 		295E9F1A1F47542300483EF6 /* PostSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295E9F191F47542300483EF6 /* PostSectionController.swift */; };
 		4F3D18D469D39672E23015D8 /* Pods_ModelingAndBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A1962B692E6A5AFE0AC88B /* Pods_ModelingAndBinding.framework */; };
+		F40DBCD6224480AE00A7B0C1 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DBCD5224480AE00A7B0C1 /* ImageListViewModel.swift */; };
+		F40DBCD82244E3CC00A7B0C1 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DBCD72244E3CC00A7B0C1 /* ImageListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		43BE0546D56A5316B4E76E57 /* Pods-ModelingAndBinding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelingAndBinding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModelingAndBinding/Pods-ModelingAndBinding.debug.xcconfig"; sourceTree = "<group>"; };
 		66A1962B692E6A5AFE0AC88B /* Pods_ModelingAndBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModelingAndBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67282F4C0DFADA1FAB95ECDA /* Pods-ModelingAndBinding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModelingAndBinding.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModelingAndBinding/Pods-ModelingAndBinding.release.xcconfig"; sourceTree = "<group>"; };
+		F40DBCD5224480AE00A7B0C1 /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
+		F40DBCD72244E3CC00A7B0C1 /* ImageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +90,14 @@
 				295E9F0F1F472FEB00483EF6 /* Post.swift */,
 				295E9F111F47328C00483EF6 /* Comment.swift */,
 				295E9F071F472A6900483EF6 /* UserCell.swift */,
+				F40DBCD72244E3CC00A7B0C1 /* ImageListCell.swift */,
 				295E9F091F472A6D00483EF6 /* ImageCell.swift */,
 				295E9F0B1F472A7600483EF6 /* ActionCell.swift */,
 				295E9F131F4736A200483EF6 /* UserViewModel.swift */,
 				295E9F151F47512300483EF6 /* ActionViewModel.swift */,
 				295E9F191F47542300483EF6 /* PostSectionController.swift */,
 				295E9F171F47512800483EF6 /* ImageViewModel.swift */,
+				F40DBCD5224480AE00A7B0C1 /* ImageListViewModel.swift */,
 				295E9F0D1F472A7B00483EF6 /* CommentCell.swift */,
 				295E9EF91F4720E700483EF6 /* Main.storyboard */,
 				295E9EFC1F4720E700483EF6 /* Assets.xcassets */,
@@ -251,11 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				295E9EF81F4720E700483EF6 /* ViewController.swift in Sources */,
+				F40DBCD6224480AE00A7B0C1 /* ImageListViewModel.swift in Sources */,
 				295E9F0C1F472A7600483EF6 /* ActionCell.swift in Sources */,
 				295E9F0A1F472A6D00483EF6 /* ImageCell.swift in Sources */,
 				295E9F121F47328C00483EF6 /* Comment.swift in Sources */,
 				295E9F161F47512300483EF6 /* ActionViewModel.swift in Sources */,
 				295E9EF61F4720E700483EF6 /* AppDelegate.swift in Sources */,
+				F40DBCD82244E3CC00A7B0C1 /* ImageListCell.swift in Sources */,
 				295E9F081F472A6900483EF6 /* UserCell.swift in Sources */,
 				295E9F101F472FEB00483EF6 /* Post.swift in Sources */,
 				295E9F141F4736A200483EF6 /* UserViewModel.swift in Sources */,

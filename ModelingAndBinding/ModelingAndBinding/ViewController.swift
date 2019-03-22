@@ -21,13 +21,24 @@ class ViewController: UIViewController, ListAdapterDataSource {
         data.append(Post(
             username: "@janedoe",
             timestamp: "15min",
-            imageURL: URL(string: "https://placekitten.com/g/375/250")!,
+            imageURLs: [URL(string: "https://placekitten.com/g/375/250")!],
             likes: 384,
             comments: [
                 Comment(username: "@ryan", text: "this is beautiful!"),
                 Comment(username: "@jsq", text: "😱"),
                 Comment(username: "@caitlin", text: "#blessed"),
             ]
+        ))
+
+        data.append(Post(
+            username: "@johnappleseed",
+            timestamp: "30min",
+            imageURLs: [URL(string: "https://placekitten.com/g/376/250")!, URL(string: "https://placekitten.com/g/377/250")!, URL(string: "https://placekitten.com/g/378/250")!],
+            likes: 2,
+            comments: [
+                Comment(username: "@simon", text: "awww"),
+                Comment(username: "@caitlin", text: "#blessed"),
+                ]
         ))
 
         adapter.dataSource = self
